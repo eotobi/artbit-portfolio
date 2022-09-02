@@ -1,4 +1,16 @@
 .mainhome{
     display: flex;
-    
+    align-items: flex-start;
+    margin-top: 0%;
+    .sidebar{
+        flex: 3;
+    }
+    .nav-home{
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+        .navbar{
+            color: aliceblue;
+        }
+    }
 }

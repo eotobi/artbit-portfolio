@@ -1,4 +1,12 @@
 import React from 'react'
+import ArchitectureIcon from '@mui/icons-material/Architecture'
+import DehazeIcon from '@mui/icons-material/Dehaze'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle'
+import ConstructionIcon from '@mui/icons-material/Construction'
+import AutoStoriesIcon from '@mui/icons-material/AutoStories'
+import DataObjectIcon from '@mui/icons-material/DataObject'
+import DashboardIcon from '@mui/icons-material/Dashboard'
+import ExitToAppIcon from '@mui/icons-material/ExitToApp'
 import "./sidebar.scss"
 
 function Sidebar() {
@@ -6,44 +14,44 @@ function Sidebar() {
     <div className='sidebar'>
       <div className="logo-content">
         <div className="logo">
-          <span>logo here</span>
+          <ArchitectureIcon className="icon"/>
           <div className="logo-name">Artbit Apps</div>
         </div>
-        <span>menu button here</span>
+        <DehazeIcon className="menu-button" id="btn" />
       </div>
       <ul className="nav-list">
         <li>
           <a href="#">
-            <span>#-#</span>
-            <span className="links-name">DASHBOARD</span>
+          <AccountCircleIcon className="icons"/>
+            <span className="links-name">Profile Details</span>
           </a>
           {/* <span className="toolstip">DASHBOARD</span> */}
         </li>
         <li>
           <a href="#">
-            <span>#-#</span>
-            <span className="links-name">DASHBOARD</span>
+          <ConstructionIcon className="icons"/>
+            <span className="links-name">Personal Projects</span>
           </a>
           {/* <span className="toolstip">DASHBOARD</span> */}
         </li>
         <li>
           <a href="#">
-            <span>#-#</span>
-            <span className="links-name">DASHBOARD</span>
+          <AutoStoriesIcon className="icons"/>
+            <span className="links-name">Articles</span>
           </a>
           {/* <span className="toolstip">DASHBOARD</span> */}
         </li>
         <li>
           <a href="#">
-            <span>#-#</span>
-            <span className="links-name">DASHBOARD</span>
+          <DataObjectIcon className="icons"/>
+            <span className="links-name">Tutorials</span>
           </a>
           {/* <span className="toolstip">DASHBOARD</span> */}
         </li>
         <li>
           <a href="#">
-            <span>#-#</span>
-            <span className="links-name">DASHBOARD</span>
+          <DashboardIcon className="icons"/>
+            <span className="links-name">Dashboard</span>
           </a>
           {/* <span className="toolstip">DASHBOARD</span> */}
         </li>
@@ -51,17 +59,16 @@ function Sidebar() {
       <div className="profile-content">
         <div className="profile">
           <div className="profile-details">
-          <img src="profile.jpg" alt=""/>
+          <img src={process.env.PUBLIC_URL + '/profile.jpg'} alt=""/>
             <div className="name-job">
               <div className="name">Elisha Otobi</div>
               <div className="job">Fullstack Developer</div>
             </div>
           </div>
+          <ExitToAppIcon className="icon-exit"/>
         </div>
-        <span>logout icon here</span>
       </div>
     </div>
   )
 }
-
 export default Sidebar

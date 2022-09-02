@@ -1,41 +1,53 @@
 .sidebar{
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
     background: #11101d;
     height: 100%;
     width: 240px;
     padding: 6px 14px;
 
     .logo-content{
-
+        margin-top: 20px;
+        background: #1e1c35;
+        border-radius: 12px;
+        padding: 5px;
+        // display: flex;
+        // align-items: center;
     .logo{
-        color: fff;
+        color: #fff;
         display: flex;
         height: 50px;
         width:  100%;
         align-items: center;
         .icon{
-            font-size:28px;
+            font-size:40px;
             margin-right: 5px;  
         }
         .logo-name{
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
       } 
-    }
-    .menu-button{
+      #btn{
         position: absolute;
         color: #fff;
-        left: 90;
-        top: 6px;
+        left: 85%;
+        top: 30px;
         font-size: 20px;
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 30px;
         text-align: center;
         line-height: 50px;
         transform: translateX(-50%);
+        }
+        #btn:hover{
+            cursor: pointer;
+            color: rgb(236, 230, 211);
+            height: 65px;
+            width: 35px
+        }
     }
     ul{
         margin-top: 20px;
@@ -43,7 +55,7 @@
             position: relative;
             height: 50px;
             width: 100%;
-            margin: 0 5px;
+            margin: 0px 0px 15px 0px;
             list-style: none;
             line-height: 50px;
             a{
@@ -54,8 +66,9 @@
                 transition: all 0.4s ease;
                 border-radius: 12px;
                 .icons{
-                    height: 50px;
-                    min-width: 50px;
+                    height: 25px;
+                    min-width: 25px;
+                    margin-right: 10px;
                     border-radius: 12px;
                     line-height: 50px;
                     text-align: center;
@@ -70,8 +83,11 @@
     .profile-content{
         position: absolute;
         color: #fff;
+        width: 100%;
         bottom: 0;
         left: 0;
+        background-color: #34315c;
+        border-radius: 12px;
         .profile{
             position: relative;
             padding: 10px 6px;
@@ -96,6 +112,18 @@
                     }
                 }
             
+            }
+            .icon-exit{
+                position: absolute;
+                color: #fff;
+                left: 88%;
+                bottom: 25px;
+                font-size: 20px;
+                height: 40px;
+                min-width: 25px;
+                transform: translateX(-50%);
+                line-height: 50px;
+                border-radius: 12px;
             }
         }
     }

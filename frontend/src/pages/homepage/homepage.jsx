@@ -9,8 +9,11 @@ function Homepage() {
       <div className="sidebar">
         <Sidebar/>
       </div>
-      <div className="navbar">
-        <Navbar/>
+      <div className="nav-home">
+        <div className="navbar">
+          <Navbar/>
+            This is main home content
+        </div>
       </div>
     </div>
   )
