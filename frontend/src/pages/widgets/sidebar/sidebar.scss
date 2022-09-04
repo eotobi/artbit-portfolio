@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar-active{
     position: fixed;
     top: 0;
     left: 0;
@@ -6,12 +6,14 @@
     height: 100%;
     width: 240px;
     padding: 6px 14px;
+    transition: all 0.5s ease-in;
 
     .logo-content{
         margin-top: 20px;
         background: #1e1c35;
         border-radius: 12px;
         padding: 5px;
+        transition: all 0.5s ease-in;
         // display: flex;
         // align-items: center;
     .logo{
@@ -20,6 +22,7 @@
         height: 50px;
         width:  100%;
         align-items: center;
+        transition: all 0.5s ease-in;
         .icon{
             font-size:40px;
             margin-right: 5px;  
@@ -73,11 +76,38 @@
                     line-height: 50px;
                     text-align: center;
                 }
+                .links-name{
+                    //opacity: 0;
+                    pointer-events: none;
+                }
             }
             a:hover{
                 color: #11101d;
                 background: #fff;
             }
+            .tooltip{
+                position: absolute;
+                left:  122px;
+                top: 0;
+                border-radius: 6px;
+                height: 35px;
+                width: 122px;
+                background: #fff;
+                line-height: 35px;
+                text-align: center;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+                transition: 0s;
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+        li:hover{
+            .tooltip{
+                transition: all 0.5s ease;
+                opacity: 1;
+                top: 50%
+            }
+            
         }
     }
     .profile-content{
@@ -128,4 +158,135 @@
         }
     }
     
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #484850;
+    height: 100%;
+    width: 30px;
+    padding: 6px 14px;
+    transition: all 0.5s ease-in;
+
+    .logo-content{
+        margin-top: 20px;
+        background: #1e1c35;
+        border-radius: 12px;
+        padding: 5px;
+        transition: all 0.5s ease-in;
+        
+    .logo{
+       display: none;
+      } 
+      #btn{
+        position: absolute;
+        color: #fff;
+        left: 50%;
+        top: 30px;
+        font-size: 20px;
+        height: 60px;
+        width: 30px;
+        text-align: center;
+        line-height: 50px;
+        transform: translateX(-50%);
+        }
+        #btn:hover{
+            background-color: rgb(255, 251, 236);
+            cursor: pointer;
+            border-radius: 12px;
+            height: 50px;
+            color: rgb(51, 40, 6);
+        }
+    }
+    ul{
+        margin-top: 60px;
+        margin-left: 0;
+        padding: 0;
+        li{
+            position: relative;
+            height: 50px;
+            width: 100%;
+            margin-top: 10px;
+            list-style: none;
+            line-height: 50px;
+            a{
+                color: #fff;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                transition: all 0.4s ease;
+                border-radius: 12px;
+                .icons{
+                    height: 30px;
+                    min-width: 30px;
+                    border-radius: 12px;
+                    line-height: 50px;
+                    text-align: center;
+                    transition: all 0.4s ease;
+                }
+                .icons:hover{
+                    color: #11101d;
+                    background: #fff;
+                }
+                .links-name{
+                    display: none;
+                }
+            }
+            
+            .tooltip{
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 6px;
+                height: 35px;
+                width: 122px;
+                background: rgb(236, 228, 228);
+                line-height: 35px;
+                text-align: center;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+                transition: 0s;
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+        li:hover{
+            .tooltip{
+                transition: all 0.5s ease;
+                opacity: 1;
+                top: 50%
+            }
+            
+        }
+    }
+    .profile-content{
+        position: absolute;
+        color: #fff;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #34315c;
+        border-radius: 12px;
+        .profile{
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            height: 60px;
+            .profile-details{
+                img{
+                    height: 40px;
+                    width: 40px;
+                    object-fit: cover;
+                    border-radius: 12px;
+                }
+                .name-job{
+                    display: none;
+                }
+            
+            }
+            .icon-exit{
+                display: none;
+            }
+        }
+    }   
 }
