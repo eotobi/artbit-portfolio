@@ -1,14 +1,50 @@
 .navbar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 265px;
     display: flex;
-    background-color: #11101d;
     height: 65px;
-    width: calc(100% - 265px);
-    color: #fff;
+    width: 100%;
     align-items: center;
-    margin: 0px;
+    justify-content: center;
 
+    .nav-links{
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        font-family: monospace;
+        font-size: 18px;
+        color: #8787b1;
+        
+        .nav-home{
+            margin-left: 50px;
+            text-decoration: none;
+        }
+        .nav-home:hover{
+            cursor: pointer;
+            color: #4c4c61;
+        }
+        .nav-projects{
+            margin-left: 50px;
+            text-decoration: none;
+        }
+        .nav-projects:hover{
+            cursor: pointer;
+            color: #404066;
+        }
+        .nav-articles{
+            margin-left: 50px;
+            text-decoration: none;
+        }
+        .nav-articles:hover{
+            cursor: pointer;
+            color: #696974;
+        }
+        .nav-tutorials{
+            margin-left: 50px;
+            text-decoration: none;
+        }
+        .nav-tutorials:hover{
+            cursor: pointer;
+            color: #70709e;
+        }
+    }
+    
 }

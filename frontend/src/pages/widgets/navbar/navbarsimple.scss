@@ -1,0 +1,80 @@
+.navbar{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+        .title{
+            flex: 8;
+            color: #fff;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            margin-left: 15px;
+        }
+        .search{
+            flex: 2;
+            display: flex;
+            height: 40px;
+            background-color: #6a6a7c;
+            border-radius: 12px;
+            align-items: center;
+            .icon{
+                margin-left: 6px;
+                font-size: 25px;
+                padding: 6px;
+                color: #fff;
+            }
+            input{
+                background-color: #6a6a7c;
+                border: none;
+                outline: none;
+                color: #fff;
+                font-size: 18px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            ::placeholder{
+                color:#fff;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+        .nav-links{
+            flex: 3;
+            width: fit-content;
+            display: flex;
+            justify-content: flex-end;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            .icons{
+                font-size: 18px;
+                margin-left: 25px;
+                margin-top: 10px;
+                color: #fff;
+            }
+            .icons:hover{
+                cursor: pointer;
+                color: #a2a2bd;
+            }
+            .nav-admin{
+                display: flex;
+                margin-left: 35px;
+                margin-right: 10px;
+                border: solid 2px #b7b7cc;
+                border-radius: 12px;
+                color: #b7b7cc;
+                min-width: fit-content;
+                padding: 5px;
+                justify-content: center;
+                .admin-icon{
+                    font-size: 30px;
+                }
+                .admin-name{
+                    font-family: 'Courier New', Courier, monospace;
+                    margin-top: 5px;
+                }
+            }
+            .nav-admin:hover{
+                background-color: #b7b7cc;
+                color: #373741;
+                cursor: pointer;
+            }
+        }
+}

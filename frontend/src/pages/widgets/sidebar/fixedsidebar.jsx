@@ -7,57 +7,46 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories'
 import DataObjectIcon from '@mui/icons-material/DataObject'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'
 import HomeIcon from '@mui/icons-material/Home';
-import "./sidebar.scss"
+import "./fixedsidebar.scss"
 import { Link } from 'react-router-dom';
 
-function Sidebar() {
-  const [isOpen, setIsopen] =  useState(false);
-
-  const ToggleSidebar = () =>{
-    isOpen===true? setIsopen(false) : setIsopen(true);
-    // console.log(isOpen)
-  }
+function FixedSidebar() {
+ 
   return (
-    <div className={`sidebar${isOpen == true ?'-active' : ''}`}>
-      <div className="active-sidebar-logo-content">
-        <img className="img-logo" src={process.env.PUBLIC_URL + '/mylogo.svg'} alt=""/>
-        <DehazeIcon className="menu-button" id="btn" onClick={ToggleSidebar}/>
+    <div className="sidebar-active">
+      <div className="logo-content">
+            <img className="image-logo" src={process.env.PUBLIC_URL + '/mylogo.svg'} alt=""/>
       </div>
       <ul className="nav-list">
       <li>
-      <Link to="/homepage">
+          <Link to="/homepage">
           <HomeIcon className="icons"/>
             <span className="links-name">Homepage</span>
           </Link>
-          <span className="tooltip">view homepage</span>
         </li>
         <li>
-        <Link to="/profile">
+          <Link to="/profile">
           <AccountCircleIcon className="icons"/>
             <span className="links-name">Profile Details</span>
           </Link>
-          <span className="tooltip">view my profile</span>
         </li>
         <li>
-        <Link to="/projects">
+          <Link to="/projects">
           <ConstructionIcon className="icons"/>
             <span className="links-name">Personal Projects</span>
           </Link>
-          <span className="tooltip">view my projects</span>
         </li>
         <li>
           <a href="#">
           <AutoStoriesIcon className="icons"/>
             <span className="links-name">Articles</span>
           </a>
-          <span className="tooltip">read my articles</span>
         </li>
         <li>
           <a href="#">
           <DataObjectIcon className="icons"/>
             <span className="links-name">Tutorials</span>
           </a>
-          <span className="tooltip">coding tutorials</span>
         </li>
       </ul>
       <div className="profile-content">
@@ -75,4 +64,4 @@ function Sidebar() {
     </div>
   )
 }
-export default Sidebar
+export default FixedSidebar

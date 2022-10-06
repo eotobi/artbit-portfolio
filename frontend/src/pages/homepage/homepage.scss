@@ -33,7 +33,7 @@
                 }
                 .contact-btn{
                     border: solid 3px #b7b7cc;
-                    border-radius: 6px;
+                    border-radius: 12px;
                     color: #b7b7cc;
                     font-size: 30px;
                     width: fit-content;
@@ -42,7 +42,6 @@
                 }
                 .contact-btn:hover{
                     background-color: #b7b7cc;
-                    border-radius: 6px;
                     color: #373741;
                     cursor: pointer;
                 }
@@ -86,36 +85,46 @@
                 }
             }
         }
-        .details-card{
-            background-color: antiquewhite;
-            padding: 30px;
-            margin-top: 50px;
-            margin-left: 10px;
-            border-radius: 12px;
-            width: 100%;
-            img{
-                position: relative;
-                height: 180px;
-                width: 200px;
-                left: 70%;  
+        .details-and-navlink{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            .home-navbar{
+                color: #fff;
             }
-            .code{
-                position: relative;
-                top: -20%;
-                left: 0;
-                font-family: 'Courier New', Courier, monospace;
-                color: #f1f1f1;
-                background-color: crimson;
-                padding: 10px;
-                font-size: 105%;
-                width: fit-content;
-                margin: 0;
+            .details-card{
+                display: flex;
+                background-color: antiquewhite;
+                padding: 30px;
+                margin-top: 50px;
+                margin-left: 10px;
+                border-radius: 12px;
+                width: 100%;
+                .image-details{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        height: 180px;
+                        width: 200px;
+                    }
+                    .details{
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+                }
+                .code{
+                    font-family: 'Courier New', Courier, monospace;
+                    color: white;
+                    background-color: rgba(52, 51, 59, 0.219);
+                    padding: 10px;
+                    font-size: 105%;
+                    width: fit-content;
+                    margin: 0;
+                    border-radius: 6px;
+                }
             }
-            .details{
-                position: relative;
-                left: 0;
-                top: -10%;
-            }
+
         }
+        
     }
 }

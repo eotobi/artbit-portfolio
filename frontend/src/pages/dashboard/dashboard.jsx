@@ -1,7 +1,12 @@
 import React from 'react'
+import Navbar from '../widgets/navbar/navbar';
 
-export const dashboard = () => {
+const Dashboard = () => {
   return (
-    <div>dashboard</div>
+    <div>
+      <Navbar/>
+    </div>
   )
 }
+
+export default Dashboard

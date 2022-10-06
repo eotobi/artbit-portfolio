@@ -8,48 +8,37 @@
     padding: 6px 14px;
     transition: all 0.5s ease-in;
 
-    .logo-content{
+    .active-sidebar-logo-content{
         margin-top: 20px;
-        background: #1e1c35;
+        background: #ffffff;
         border-radius: 12px;
-        padding: 5px;
+        padding: 3px;
         transition: all 0.5s ease-in;
-        // display: flex;
-        // align-items: center;
-    .logo{
-        color: #fff;
         display: flex;
-        height: 50px;
-        width:  100%;
         align-items: center;
-        transition: all 0.5s ease-in;
-        .icon{
-            font-size:40px;
-            margin-right: 5px;  
-        }
-        .logo-name{
+        justify-content: center;
+
+        .img-logo{
+            height: 40px;
+            width: 60px;
+            color: #fff;
+            flex: 5;
+        }     
+
+        #btn{
+            color: rgba(255, 0, 0, 0.781);
+            flex: 1;
             font-size: 25px;
-            font-weight: 400;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-      } 
-      #btn{
-        position: absolute;
-        color: #fff;
-        left: 85%;
-        top: 30px;
-        font-size: 20px;
-        height: 60px;
-        width: 30px;
-        text-align: center;
-        line-height: 50px;
-        transform: translateX(-50%);
-        }
+            text-align: center;
+            line-height: 50px;
+            justify-self: flex-end;
+            }
         #btn:hover{
             cursor: pointer;
-            color: rgb(236, 230, 211);
-            height: 65px;
-            width: 35px
+            font-size: 30px;
+            color: rgba(197, 162, 162, 0.959);
+            padding: 0;
+            margin: 0;
         }
     }
     ul{
@@ -85,30 +74,30 @@
                 color: #11101d;
                 background: #fff;
             }
-            .tooltip{
-                position: absolute;
-                left:  122px;
-                top: 0;
-                border-radius: 6px;
-                height: 35px;
-                width: 122px;
-                background: #fff;
-                line-height: 35px;
-                text-align: center;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-                transition: 0s;
-                opacity: 0;
-                pointer-events: none;
-            }
+            // .tooltip{
+            //     position: absolute;
+            //     left:  122px;
+            //     top: 0;
+            //     border-radius: 6px;
+            //     height: 35px;
+            //     width: 122px;
+            //     background: #fff;
+            //     line-height: 35px;
+            //     text-align: center;
+            //     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            //     transition: 0s;
+            //     opacity: 0;
+            //     pointer-events: none;
+            // }
         }
-        li:hover{
-            .tooltip{
-                transition: all 0.5s ease;
-                opacity: 1;
-                top: 50%
-            }
+        // li:hover{
+        //     // .tooltip{
+        //     //     transition: all 0.5s ease;
+        //     //     opacity: 1;
+        //     //     top: 50%
+        //     // }
             
-        }
+        // }
     }
     .profile-content{
         position: absolute;
@@ -169,14 +158,14 @@
     padding: 6px 14px;
     transition: all 0.5s ease-in;
 
-    .logo-content{
+    .active-sidebar-logo-content{
         margin-top: 20px;
-        background: #1e1c35;
+        background: #ffffffc4;
         border-radius: 12px;
         padding: 5px;
         transition: all 0.5s ease-in;
         
-    .logo{
+    .img-logo{
        display: none;
       } 
       #btn{
@@ -241,7 +230,7 @@
                 border-radius: 6px;
                 height: 35px;
                 width: 122px;
-                background: rgb(236, 228, 228);
+                background: rgba(236, 228, 228, 0.726);
                 line-height: 35px;
                 text-align: center;
                 box-shadow: 0 5px 10px rgba(0,0,0,0.2);

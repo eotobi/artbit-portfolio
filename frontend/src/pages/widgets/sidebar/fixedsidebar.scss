@@ -1,0 +1,111 @@
+.sidebar-active{
+    background: #11101d;
+    flex: 2;
+    height: 100%;
+    padding: 6px 14px;
+
+    .logo-content{
+        margin-top: 20px;
+        background: #ffffff;
+        border-radius: 12px;
+        display: flex;
+        padding: 2px;
+        justify-content: center;
+        .image-logo{
+            height: 60px;
+            width: 80px;
+            color: #fff;
+        }     
+    }
+    ul{
+        margin-top: 20px;
+        li{
+            position: relative;
+            height: 50px;
+            width: 100%;
+            margin: 0px 0px 15px 0px;
+            list-style: none;
+            line-height: 50px;
+            a{
+                color: #fff;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                transition: all 0.4s ease;
+                border-radius: 12px;
+                .icons{
+                    height: 25px;
+                    min-width: 25px;
+                    margin-right: 10px;
+                    border-radius: 12px;
+                    line-height: 50px;
+                    text-align: center;
+                }
+                .links-name{
+                    //opacity: 0;
+                    pointer-events: none;
+                }
+            }
+            a:hover{
+                color: #ffffff;
+                background: rgba(255, 255, 255, 0.329);
+            }
+        }
+        li:hover{
+            .tooltip{
+                transition: all 0.5s ease;
+                opacity: 1;
+                top: 50%
+            }
+            
+        }
+    }
+    .profile-content{
+        position: absolute;
+        color: #fff;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #34315c;
+        border-radius: 12px;
+        .profile{
+            position: relative;
+            padding: 10px 6px;
+            height: 60px;
+            .profile-details{
+                display: flex;
+                align-items: center;
+                img{
+                    height: 45px;
+                    width: 45px;
+                    object-fit: cover;
+                    border-radius: 12px;
+                }
+                .name-job{
+                    margin-left: 10px;
+                    .name{
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                    .job{
+                        font-size: 12px;
+                    }
+                }
+            
+            }
+            .icon-exit{
+                position: absolute;
+                color: #fff;
+                left: 88%;
+                bottom: 25px;
+                font-size: 20px;
+                height: 40px;
+                min-width: 25px;
+                transform: translateX(-50%);
+                line-height: 50px;
+                border-radius: 12px;
+            }
+        }
+    }
+    
+}

@@ -1,8 +1,11 @@
 import React from 'react'
+import './loginpage.scss'
 
 function Loginpage() {
   return (
-    <div>Loginpage</div>
+    <div className='login-container'>
+      Loginpage
+    </div>
   )
 }
 

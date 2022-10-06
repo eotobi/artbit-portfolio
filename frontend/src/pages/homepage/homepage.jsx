@@ -4,7 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import Navbar from '../widgets/navbar/navbar';
+import NavbarSimple from '../widgets/navbar/navbarsimple';
 import './homepage.scss'
 
 function Homepage() {
@@ -41,31 +41,38 @@ function Homepage() {
             </div>
           </div>
         </div>
-        <div className="details-card">
-        <img src={process.env.PUBLIC_URL + '/mylogo.svg'} alt=""/>
-        <pre className='code'>
-          {
-          `
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    JetpackComposeTheme {
-        Greeting("World")
+        <div className="details-and-navlink">
+          <div className="home-navbar">
+            <NavbarSimple/>
+          </div>
+          <div className="details-card">
+            <div className="image-details">
+              <img src={process.env.PUBLIC_URL + '/mylogo.svg'} alt=""/>
+              <div className='details'>
+              I design and create modern, user-oriented, attractive UX 
+              and develop secure, scalable and efficient backends.
+            </div>
+            </div>
+            <pre className='code'>
+              {
+              `
+    @Composable
+    fun Greeting(name: String) {
+        Text(text = "Hello $name!")
     }
-}
 
-          `
-          }
-        </pre>
-        <div className='details'>
-          I design and create modern, user-oriented, attractive UX 
-          and develop secure, scalable and efficient backends.
-        </div>
+    @Preview(showBackground = true)
+    @Composable
+    fun DefaultPreview() {
+        JetpackComposeTheme {
+            Greeting("World")
+        }
+    }
+
+              `
+              }
+            </pre>
+          </div>
         </div>
       </div>
     </div>
